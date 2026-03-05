@@ -5,6 +5,22 @@ import { ArrowRight, Mic, Shield, Clock } from 'lucide-react';
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-black">
+      {/* Navigation */}
+      <nav className="flex items-center justify-between px-8 py-6 border-b border-gray-800">
+        <div className="flex items-center gap-2">
+          <div className="w-8 h-8 bg-teal-500 rounded flex items-center justify-center">
+            <span className="text-black font-bold">S</span>
+          </div>
+          <span className="text-xl font-bold text-white">subStragra</span>
+        </div>
+        <div className="flex items-center gap-6">
+          <Link href="/login" className="text-gray-300 hover:text-white">Log in</Link>
+          <Link href="/signup" className="bg-teal-500 text-black px-6 py-2 rounded-lg font-semibold hover:bg-teal-400">
+            Get Started
+          </Link>
+        </div>
+      </nav>
+
       {/* Hero Section */}
       <div className="container mx-auto px-4 py-20">
         <div className="text-center mb-16">
