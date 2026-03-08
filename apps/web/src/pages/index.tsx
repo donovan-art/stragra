@@ -46,8 +46,20 @@ const LandingPage = () => {
           <div className="text-2xl font-bold tracking-tight">
             sub<span className="text-[#5eead4]">Stragra</span>
           </div>
-          <div className="bg-[#0a1628] text-[#5eead4] px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider border border-[#5eead4]/30">
-            Built for Subcontractors
+          <div className="flex items-center gap-4">
+            <div className="bg-[#0a1628] text-[#5eead4] px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider border border-[#5eead4]/30">
+              Built for Subcontractors
+            </div>
+            <Link href="/login">
+              <button className="text-gray-300 hover:text-white px-4 py-2 rounded-lg font-medium transition-colors">
+                Log in
+              </button>
+            </Link>
+            <Link href="/login">
+              <button className="bg-[#5eead4] hover:bg-[#2dd4bf] text-[#0a1628] px-5 py-2 rounded-lg font-semibold transition-colors">
+                Get Started
+              </button>
+            </Link>
           </div>
         </div>
       </nav>
