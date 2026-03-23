@@ -8,23 +8,32 @@
  ✓ Compiled successfully
    Linting and checking validity of types ...
    Collecting page data ...
-   Generating static pages (0/5) ...
-   Generating static pages (1/5) 
-   Generating static pages (2/5) 
-   Generating static pages (3/5) 
- ✓ Generating static pages (5/5) 
+   Generating static pages (0/14) ...
+   Generating static pages (3/14) 
+   Generating static pages (6/14) 
+   Generating static pages (10/14) 
+ ✓ Generating static pages (14/14) 
    Finalizing page optimization ...
    Collecting build traces ...
 
 Route (app)                              Size     First Load JS
-┌ ○ /                                    6.94 kB        88.8 kB
+┌ ○ /                                    1.38 kB         237 kB
 ├ ○ /_not-found                          871 B          82.8 kB
-└ ○ /files                               51.8 kB         140 kB
+├ ○ /brief                               375 B           236 kB
+├ ○ /calendar                            376 B           236 kB
+├ ○ /crm                                 371 B           236 kB
+├ ○ /files                               43.4 kB         141 kB
+├ ○ /inbox                               376 B           236 kB
+├ ○ /legal                               376 B           236 kB
+├ ○ /settings                            377 B           236 kB
+├ ○ /tasks                               376 B           236 kB
+├ ○ /vault                               375 B           236 kB
+└ ○ /voice                               375 B           236 kB
 + First Load JS shared by all            81.9 kB
-  ├ chunks/269-5262c60300968073.js       26.7 kB
-  ├ chunks/91d61263-9682973db4e9ed3a.js  53.3 kB
+  ├ chunks/269-46b0ca8c153032ea.js       26.7 kB
+  ├ chunks/91d61263-bdd400f90cfcd2e8.js  53.3 kB
   ├ chunks/main-app-eaae42bee08091fb.js  219 B
-  └ chunks/webpack-67fb7aab001436e5.js   1.71 kB
+  └ chunks/webpack-966b9059681684bf.js   1.72 kB
 
 
 ○  (Static)  prerendered as static content
