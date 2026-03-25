@@ -1,0 +1,122 @@
+{
+  "clientId": "001-stragra",
+  "clientName": "Stragra",
+  "createdAt": "2026-03-24T05:45:00.000Z",
+  "updatedAt": "2026-03-24T05:45:00.000Z",
+  "version": "1.0.0",
+  "phase1Legal": {
+    "llcStatus": "not_started",
+    "articlesOfOrganizationFiled": false,
+    "registeredAgentService": "northwest",
+    "einStatus": "not_applied",
+    "operatingAgreementStatus": "not_created",
+    "operatingAgreementTemplate": "manager_managed",
+    "caStatementOfInformationFiled": false,
+    "caFranchiseTaxAccountCreated": false,
+    "businessBankAccountOpened": false,
+    "generalLiabilityInsurance": false,
+    "e_oInsurance": false,
+    "_requiredCompleted": false
+  },
+  "phase2Digital": {
+    "websitePlatform": "nextjs_custom",
+    "useWebBuilder": true,
+    "domainStatus": "not_purchased",
+    "professionalEmailSetup": false,
+    "logoStatus": "not_created",
+    "googleAnalyticsConnected": false,
+    "googleSearchConsoleConnected": false
+  },
+  "phase3Departments": {
+    "sales": {
+      "enabled": true,
+      "status": "planning",
+      "headcount": 0,
+      "crmPlatform": "hubspot"
+    },
+    "marketing": {
+      "enabled": true,
+      "status": "planning",
+      "headcount": 0,
+      "focus": ["content", "seo", "paid_ads"]
+    },
+    "operations": {
+      "enabled": true,
+      "status": "planning",
+      "headcount": 0,
+      "tools": ["notion", "linear"]
+    },
+    "customerSuccess": {
+      "enabled": true,
+      "status": "planning",
+      "headcount": 0,
+      "helpdeskPlatform": "intercom"
+    },
+    "engineering": {
+      "enabled": true,
+      "status": "planning",
+      "headcount": 1,
+      "techStack": ["Next.js", "TypeScript", "OpenAI API", "Supabase"]
+    }
+  },
+  "phase4Roadmap": {
+    "daily": [],
+    "weekly": [],
+    "monthly": [
+      {
+        "id": "m1-1",
+        "title": "Launch MVP Website",
+        "description": "Deploy landing page with lead capture and basic company info",
+        "owner": "Engineering",
+        "status": "not_started",
+        "dependencies": [],
+        "deliverables": ["Live website", "Analytics connected", "Lead capture tested"]
+      },
+      {
+        "id": "m1-2",
+        "title": "First AI Model Trained",
+        "description": "Initial property matching algorithm trained on sample data",
+        "owner": "Engineering",
+        "status": "not_started",
+        "dependencies": [],
+        "deliverables": ["Model checkpoint", "Evaluation metrics", "API endpoint"]
+      },
+      {
+        "id": "m1-3",
+        "title": "Close First Client",
+        "description": "Sign first real estate agent or brokerage to platform",
+        "owner": "Sales",
+        "status": "not_started",
+        "dependencies": [],
+        "deliverables": ["Signed contract", "Onboarding completed"]
+      }
+    ],
+    "quarterly": [
+      {
+        "id": "q1-1",
+        "title": "Achieve Product-Market Fit",
+        "description": "10+ paying clients with >80% retention rate",
+        "owner": "Leadership",
+        "status": "not_started",
+        "dependencies": [],
+        "deliverables": ["Client testimonials", "Case studies", "NPS score >50"]
+      },
+      {
+        "id": "q1-2",
+        "title": "Series Seed Preparation",
+        "description": "Pitch deck, financial model, and data room ready",
+        "owner": "Leadership",
+        "status": "not_started",
+        "dependencies": [],
+        "deliverables": ["Pitch deck", "Financial model", "Data room"]
+      }
+    ],
+    "yearly": [],
+    "northStarMetric": "Monthly Recurring Revenue (MRR)",
+    "currentPhase": "discovery"
+  },
+  "currentPhase": 1,
+  "completedPhases": [],
+  "activeAgents": ["onboardingGuide"],
+  "completedAgentTasks": []
+}

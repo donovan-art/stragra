@@ -1,0 +1,43 @@
+
+> @stragra/web@0.0.0 build /root/.openclaw/workspace/stragra/apps/web
+> next build
+
+   ▲ Next.js 14.0.4
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/17) ...
+   Generating static pages (4/17) 
+   Generating static pages (8/17) 
+   Generating static pages (12/17) 
+ ✓ Generating static pages (17/17) 
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+┌ ○ /                                    1.4 kB          237 kB
+├ ○ /_not-found                          871 B          82.8 kB
+├ ○ /brief                               375 B           236 kB
+├ ○ /calendar                            376 B           236 kB
+├ ○ /crm                                 371 B           236 kB
+├ ○ /files                               43.4 kB         141 kB
+├ ○ /inbox                               376 B           236 kB
+├ ○ /landing                             142 B          82.1 kB
+├ ○ /legal                               376 B           236 kB
+├ ○ /login                               1.99 kB         238 kB
+├ ○ /settings                            377 B           236 kB
+├ ○ /signup                              1.42 kB         237 kB
+├ ○ /tasks                               376 B           236 kB
+├ ○ /vault                               375 B           236 kB
+└ ○ /voice                               375 B           236 kB
++ First Load JS shared by all            81.9 kB
+  ├ chunks/269-46b0ca8c153032ea.js       26.7 kB
+  ├ chunks/91d61263-bdd400f90cfcd2e8.js  53.3 kB
+  ├ chunks/main-app-eaae42bee08091fb.js  219 B
+  └ chunks/webpack-50a3bd3ec1b29bd8.js   1.75 kB
+
+
+○  (Static)  prerendered as static content
+
