@@ -14,7 +14,6 @@ import {
 } from '@stragra/dashboard-ui';
 import { Mail } from 'lucide-react';
 
-const queryClient = new QueryClient();
 
 function DashboardContent() {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
@@ -76,6 +75,7 @@ function DashboardContent() {
 
 export default function DashboardPage() {
   const [mounted, setMounted] = useState(false);
+  const [queryClient] = useState(() => new QueryClient());
 
   useEffect(() => {
     setMounted(true);
