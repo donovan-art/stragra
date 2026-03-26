@@ -9,6 +9,15 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@stragra/dashboard-ui": "workspace:*",
+    "@stragra/file-explorer": "workspace:*",
+    "@stragra/supabase": "workspace:*",
+    "@tanstack/react-query": "^5.17.0",
+    "chart.js": "^4.4.1",
+    "react-chartjs-2": "^5.2.0",
+    "date-fns": "^3.0.0",
+    "axios": "^1.6.5",
+    "react-dropzone": "^14.2.3",
     "lucide-react": "^0.577.0",
     "next": "16.1.6",
     "react": "19.2.3",

@@ -1,0 +1,6 @@
+{
+  "buildCommand": "pnpm turbo build --filter=web",
+  "outputDirectory": "apps/web/.next",
+  "framework": "nextjs",
+  "regions": ["sfo1"]
+}
