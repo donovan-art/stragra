@@ -44,7 +44,7 @@ interface ErrorDisplayProps {
   title?: string;
 }
 
-function ErrorDisplay({ error, onRetry, title = "Error" }: ErrorDisplayProps): JSX.Element {
+function ErrorDisplay({ error, onRetry, title = "Error" }: ErrorDisplayProps): React.JSX.Element {
   const apiError = parseApiError(error);
   const isNetwork = isNetworkError(error);
 
@@ -83,7 +83,7 @@ function ErrorDisplay({ error, onRetry, title = "Error" }: ErrorDisplayProps): J
 // Empty State Component
 // ============================================================================
 
-function EmptyState({ onCreateFolder }: { onCreateFolder: () => void }): JSX.Element {
+function EmptyState({ onCreateFolder }: { onCreateFolder: () => void }): React.JSX.Element {
   return (
     <div className="flex flex-col items-center justify-center h-full text-center p-8">
       <div className="w-24 h-24 mb-4 bg-gray-100 rounded-full flex items-center justify-center">
@@ -106,7 +106,7 @@ function EmptyState({ onCreateFolder }: { onCreateFolder: () => void }): JSX.Ele
 // Main FileExplorer Component
 // ============================================================================
 
-export function FileExplorer({ initialFolderId = null }: FileExplorerProps): JSX.Element {
+export function FileExplorer({ initialFolderId = null }: FileExplorerProps): React.JSX.Element {
   const [currentFolderId, setCurrentFolderId] = useState<string | null>(initialFolderId);
   const [viewMode, setViewMode] = useState<"grid" | "list">("grid");
   const [selectedItems, setSelectedItems] = useState<Set<string>>(new Set());

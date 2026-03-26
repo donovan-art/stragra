@@ -1,0 +1,17 @@
+{
+  "/_not-found": "app/_not-found.js",
+  "/files/page": "app/files/page.js",
+  "/landing/page": "app/landing/page.js",
+  "/login/page": "app/login/page.js",
+  "/page": "app/page.js",
+  "/signup/page": "app/signup/page.js",
+  "/(dashboard)/brief/page": "app/(dashboard)/brief/page.js",
+  "/(dashboard)/calendar/page": "app/(dashboard)/calendar/page.js",
+  "/(dashboard)/crm/page": "app/(dashboard)/crm/page.js",
+  "/(dashboard)/inbox/page": "app/(dashboard)/inbox/page.js",
+  "/(dashboard)/legal/page": "app/(dashboard)/legal/page.js",
+  "/(dashboard)/settings/page": "app/(dashboard)/settings/page.js",
+  "/(dashboard)/tasks/page": "app/(dashboard)/tasks/page.js",
+  "/(dashboard)/vault/page": "app/(dashboard)/vault/page.js",
+  "/(dashboard)/voice/page": "app/(dashboard)/voice/page.js"
+}
