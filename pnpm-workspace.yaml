@@ -1,5 +1,3 @@
 packages:
   - 'apps/*'
-  - 'apps/legacy/apps/*'
-  - 'apps/legacy/packages/*'
   - 'packages/*'

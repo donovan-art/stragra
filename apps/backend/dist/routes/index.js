@@ -7,10 +7,12 @@ const express_1 = __importDefault(require("express"));
 const billing_1 = __importDefault(require("./billing"));
 const reminders_1 = __importDefault(require("./reminders"));
 const trades_1 = __importDefault(require("./trades"));
+const documents_1 = __importDefault(require("./documents"));
 const router = express_1.default.Router();
 router.use('/billing', billing_1.default);
 router.use('/reminders', reminders_1.default);
 router.use('/trades', trades_1.default);
+router.use('/documents', documents_1.default);
 router.get('/', (req, res) => {
     res.json({ message: 'API v1', version: '1.0.0' });
 });
