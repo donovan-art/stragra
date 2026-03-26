@@ -16,3 +16,7 @@ node_modules/
 # IDE
 .vscode/
 .idea/
+
+# Nested git repositories
+stragravet/
+vStragra/
