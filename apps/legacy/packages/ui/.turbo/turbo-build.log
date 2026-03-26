@@ -1,4 +1,4 @@
 
-> @stragra/ui@0.0.0 build /root/.openclaw/workspace/stragra/packages/ui
+> @stragra/ui@0.0.0 build /root/.openclaw/workspace/apps/legacy/packages/ui
 > tsc
 

@@ -82,7 +82,7 @@ interface MetricCardProps {
   metrics: Array<{
     metric_type: string;
     value: number;
-    recorded_at: string;
+    recorded_at: string | null;
   }>;
 }
 
@@ -97,7 +97,7 @@ function MetricCard({ title, metrics }: MetricCardProps) {
   }
 
   // Create sparkline data
-  const labels = metrics.map(m => new Date(m.recorded_at).toLocaleDateString());
+  const labels = metrics.map(m => m.recorded_at ? new Date(m.recorded_at).toLocaleDateString() : '');
   const data = metrics.map(m => m.value);
 
   const chartData = {

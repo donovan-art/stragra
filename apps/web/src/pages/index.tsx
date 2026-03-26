@@ -210,7 +210,7 @@ const LandingPage = () => {
         </div>
       </section>
 
-      <style jsx>{`
+      <style>{`
         @keyframes stamp {
           0% { transform: rotate(-5deg) scale(0); }
           50% { transform: rotate(-5deg) scale(1.2); }

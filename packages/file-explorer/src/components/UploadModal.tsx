@@ -31,8 +31,8 @@ export function UploadModal({ isOpen, onClose, parentId }: UploadModalProps) {
             file: uploadFileItem.file,
             parentId,
             onProgress: (progress) => {
-              setFiles((prev) =
-                prev.map((f) =
+              setFiles((prev) =>
+                prev.map((f) =>
                   f.file === uploadFileItem.file
                     ? { ...f, progress, status: progress === 100 ? "completed" : "uploading" }
                     : f
@@ -42,8 +42,8 @@ export function UploadModal({ isOpen, onClose, parentId }: UploadModalProps) {
           },
           {
             onError: () => {
-              setFiles((prev) =
-                prev.map((f) =
+              setFiles((prev) =>
+                prev.map((f) =>
                   f.file === uploadFileItem.file
                     ? { ...f, status: "error", error: "Upload failed" }
                     : f

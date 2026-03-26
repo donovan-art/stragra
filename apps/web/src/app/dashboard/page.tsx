@@ -1,6 +1,7 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import {
   AgentPieChart,
   AgentSidebar,
@@ -13,7 +14,9 @@ import {
 } from '@stragra/dashboard-ui';
 import { Mail } from 'lucide-react';
 
-export default function DashboardPage() {
+const queryClient = new QueryClient();
+
+function DashboardContent() {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [selectedAgentId, setSelectedAgentId] = useState<string | null>(null);
 
@@ -68,5 +71,28 @@ export default function DashboardPage() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function DashboardPage() {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  // Prevent SSR/hydration mismatch - only render after mount
+  if (!mounted) {
+    return (
+      <div className="h-screen bg-black flex items-center justify-center">
+        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600" />
+      </div>
+    );
+  }
+
+  return (
+    <QueryClientProvider client={queryClient}>
+      <DashboardContent />
+    </QueryClientProvider>
   );
 }

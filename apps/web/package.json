@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@stragra/dashboard-ui": "workspace:*",
-    "@stragra/file-explorer": "workspace:*",
+    "@stragra/file-explorer-new": "workspace:*",
     "@stragra/supabase": "workspace:*",
     "@tanstack/react-query": "^5.17.0",
     "chart.js": "^4.4.1",

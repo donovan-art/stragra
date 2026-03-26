@@ -1,4 +1,18 @@
+# Build artifacts
+.turbo/
+dist/
+tsconfig.tsbuildinfo
+
+# Dependencies
 node_modules/
-.next/
-test-results/
-playwright-report/
+
+# Environment
+.env
+.env.local
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
